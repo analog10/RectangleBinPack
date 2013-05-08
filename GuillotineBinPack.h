@@ -35,7 +35,8 @@ public:
 		RectBestLongSideFit, ///< -BLSF
 		RectWorstAreaFit, ///< -WAF
 		RectWorstShortSideFit, ///< -WSSF
-		RectWorstLongSideFit ///< -WLSF
+		RectWorstLongSideFit, ///< -WLSF
+		COUNT_FREE_RECT_CHOICE_HEURISTICS
 	};
 
 	/// Specifies the different choice heuristics that can be used when the packer needs to decide whether to
@@ -47,7 +48,8 @@ public:
 		SplitMinimizeArea, ///< -MINAS, Try to make a single big rectangle at the expense of making the other small.
 		SplitMaximizeArea, ///< -MAXAS, Try to make both remaining rectangles as even-sized as possible.
 		SplitShorterAxis, ///< -SAS
-		SplitLongerAxis ///< -LAS
+		SplitLongerAxis, ///< -LAS
+		COUNT_SPLIT_HEURISTICS
 	};
 
 	/// Inserts a single rectangle into the bin. The packer might rotate the rectangle, in which case the returned
